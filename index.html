@@ -1,0 +1,26 @@
+<html> 
+    <head>
+            <title>Coucou Philou, tu es la page par defaut du Apache!!</title>  
+
+            <script language="JavaScript">
+                var txt="Coucou Philou";
+                var txt2="Coucou Denis"
+                var temps=1500;
+                document.title = txt;
+                function clignote_titre() {
+                    if (document.title == txt) {
+                       document.title = txt2;
+                    }
+                    else {
+                        document.title = txt;
+                    }
+                }
+                setInterval('clignote_titre()',temps);
+                </script>
+    </head>
+    <body>
+        <marquee width="300" scrollamount="30" scrolldelay="50" loop="1700"><h1>La licorne de <font color="red"><b>Denis</b></font></h1></marquee>
+        <h1>La licorne de <b>Philippe</b>    </h1>
+        <img src="https://media.prod.mdn.mozit.cloud/attachments/2014/09/04/8495/67f0ce8e297d5cde0acf6c773f1fbafe/unicorn_pic.png" alt="Une image de licorne :)" />  
+    </body>
+</html>
